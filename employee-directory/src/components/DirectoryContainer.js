@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import API from "../utils/API.js"
+import API from "../utils/API"
 
 class DirectoryContainer extends Component {
     state = {
@@ -10,16 +10,19 @@ class DirectoryContainer extends Component {
         dob: ""
     }
 
+    componentDidMount() {
+        API.search
+            (res => this.setState({ 
+                image: res.results.picture.thumbnail, 
+                name: res.results.name.first + res.results.name.last 
+            }))
+    }
 
     render() {
         return (
-            <Container>
-                <Row>
-                    <Col size="md-8">
-
-                    </Col>
-                </Row>
-            </Container>
+            this.componentDidMount
         )
     }
 }
+
+export default DirectoryContainer
