@@ -1,13 +1,13 @@
-import React from 'react'
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Col from "./Col"
+// import React from 'react'
+// // import 'bootstrap/dist/css/bootstrap.min.css';
+// import Col from "./Col"
 
-const Row = () => {
-    return (
-        <div >
-            <Col></Col>
-        </div>
-    )
-}
+// const Row = () => {
+//     return (
+//         <div >
+//             <Col></Col>
+//         </div>
+//     )
+// }
 
-export default Row
+// export default Row
