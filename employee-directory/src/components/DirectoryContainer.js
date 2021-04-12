@@ -35,7 +35,12 @@ class DirectoryContainer extends Component {
         return (
             <div>
                 <Container
-                image={this.state.image} name={this.state.name} phone={this.state.phone} email={this.state.email} dob={this.state.dob} results={this.state.results}/>
+                image={this.state.image} 
+                name={this.state.name} 
+                phone={this.state.phone} 
+                email={this.state.email} 
+                dob={this.state.dob} 
+                results={this.state.results}/>
             </div>
         )
     }

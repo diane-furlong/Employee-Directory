@@ -1,4 +1,6 @@
 import React from 'react'
+import caret from '../assets/caret.png'
+import DirectoryContainer from './DirectoryContainer'
 
 const Container = (props) => {
     // console.log(props.results)
@@ -8,7 +10,7 @@ const Container = (props) => {
                 <tbody>
                     <tr>
                         <td>Photo</td>
-                        <td>Name <img src="../assets/caret.png" alt="caret"></img></td>
+                        <td>Name <img src={caret} alt="caret" width="5%" onClick={console.log("clicked")}></img></td>
                         <td>Phone</td>
                         <td>Email</td>
                         <td>Date of Birth</td>
