@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import './App.css';
-import Container from "./components/Container";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import DirectoryContainer from "./components/DirectoryContainer";
 
 function App() {
