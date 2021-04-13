@@ -1,6 +1,4 @@
 # Employee-Directory
-
-# Employee-Directory
     
 ## Description
     
