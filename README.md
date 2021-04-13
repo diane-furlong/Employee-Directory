@@ -31,7 +31,7 @@ If running application locally, this requires "npm i" in the command terminal to
     
 ## Usage
     
-The deployed application can be found here: https://diane-furlong.github.io/Employee_Directory
+The deployed application can be found here: https://diane-furlong.github.io/Employee-Directory
 
 Image of application:
 ![screenshot](./public/assets/SS_employee_directory.jpg)
