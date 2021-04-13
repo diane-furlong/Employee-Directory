@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react"
 import API from "../utils/API"
 import Container from "./Container"
+import Filter from "./Filter"
+import '../index.css';
 
 function DirectoryContainer() {
     const [employees, setEmployees] = useState([])
-    // const [sort, setSort] = useState("")
+    const [employeeRender, updateRender] = useState([])
 
     useEffect(() => {
         renderEmployees()
     }, [])
+
 
     function renderEmployees() {
         API.search()
@@ -16,6 +19,7 @@ function DirectoryContainer() {
             setEmployees(res.data.results)
         })
     }
+
 
     function sortNames() {
         const sorted = employees.sort( function(name1, name2){
@@ -30,12 +34,14 @@ function DirectoryContainer() {
         setEmployees([...sorted])
     }
 
-    
 
     return (
-      <div>
-          <Container list={employees} sortNames={sortNames}></Container>
-      </div>
+        <div>
+            <p>Search employees:</p>
+            <Filter emps={employees} updateEmps={updateRender}></Filter>
+            <br/><br/>
+            <Container list={employeeRender} sortNames={sortNames}></Container>
+        </div>
     )
 }
 

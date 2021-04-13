@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <h1>Employee Directory</h1>
       <DirectoryContainer></DirectoryContainer>
-  
     </div>
   );
 }

@@ -12,9 +12,53 @@ code {
     monospace;
 }
 
+h1 {
+  font-size: 50px;
+  color: navy;
+  background-color: peachpuff;
+  margin-bottom: 0%;
+  padding: 1%;
+}
+
+p {
+  font-size: 16px;
+  color: navy;
+}
+
+input {
+  text-align: center;
+}
+
+.wholeTable {
+  width: 100%;
+  text-align: center;
+}
+
 .btn {
   width: 5%;
   align-content: center;
   background-color: transparent;
   border: none;
+}
+
+.btn:hover {
+  background-color: peachpuff;
+}
+
+.headerRow {
+  background-color: navy;
+  color: peachpuff;
+}
+
+.eachResult {
+  background-color: grey;
+  color: peachpuff;
+}
+
+.empPhoto {
+  width: 70%;
+}
+
+.caretBtn {
+  filter: invert()
 }
