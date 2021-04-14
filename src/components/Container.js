@@ -18,7 +18,7 @@ const Container = (props) => {
                     <td>{result.name.last}, {result.name.first}</td>
                     <td>{result.phone}</td>
                     <td>{result.email}</td>
-                    <td>{result.dob.date}</td>
+                    <td>{result.dob.date.split("T")[0]}</td>
                 </tr>
                 ))}
             </tbody>
